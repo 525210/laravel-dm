@@ -7,20 +7,20 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-{{--        <link rel="shortcut icon" type="image/x-icon" href="{{ url('/img/favicon.png">--}}
-        <link rel="shortcut icon" type="image/x-icon" href="{{ url('/img/favicon.png') }}">
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
+{{--        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">--}}
 
 		<!-- all css here -->
-        <link rel="stylesheet" href="{{ url('/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ url('/css/animate.css') }}">
-        <link rel="stylesheet" href="{{ url('/css/simple-line-icons.css') }}">
-        <link rel="stylesheet" href="{{ url('/css/themify-icons.css') }}">
-        <link rel="stylesheet" href="{{ url('/css/owl.carousel.min.css') }}">
-        <link rel="stylesheet" href="{{ url('/css/slick.css') }}">
-        <link rel="stylesheet" href="{{ url('/css/meanmenu.min.css') }}">
-        <link rel="stylesheet" href="{{ url('/css/style.css') }}">
-        <link rel="stylesheet" href="{{ url('/css/responsive.css') }}">
-        <script src="{{ url('/js/vendor/modernizr-2.8.3.min.js')}}"></script>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/animate.css">
+        <link rel="stylesheet" href="/css/simple-line-icons.css">
+        <link rel="stylesheet" href="/css/themify-icons.css">
+        <link rel="stylesheet" href="/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/css/slick.css">
+        <link rel="stylesheet" href="/css/meanmenu.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/responsive.css">
+        <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <header class="header-area">
@@ -35,7 +35,7 @@
                         <div class="col-lg-8 col-md-8 col-12">
                             <div class="account-curr-lang-wrap f-right">
                                 <ul>
-                                    <li class="top-hover"><a href="#">$Doller (US) <i class="{{url('icon-arrow-down') }}"></i></a>
+                                    <li class="top-hover"><a href="#">$Doller (US) <i class="icon-arrow-down"></i></a>
                                         <ul>
                                             <li><a href="#">Taka (BDT)</a></li>
                                             <li><a href="#">Riyal (SAR)</a></li>
@@ -43,12 +43,12 @@
                                             <li><a href="#">Dirham (AED)</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><img alt="flag" src="{{ url('/img/icon-img/en.jpg') }}"> English  <i class="{{url('icon-arrow-down') }}"></i></a>
+                                    <li><a href="#"><img alt="flag" src="/img/icon-img/en.jpg"> English  <i class="icon-arrow-down"></i></a>
                                         <ul>
-                                            <li><a href="#"><img alt="flag" src="{{ url('/img/icon-img/bl.jpg') }}">Bangla </a></li>
-                                            <li><a href="#"><img alt="flag" src="{{ url('/img/icon-img/ar.jpg') }}">Arabic</a></li>
-                                            <li><a href="#"><img alt="flag" src="{{ url('/img/icon-img/in.jpg') }}">Hindi </a></li>
-                                            <li><a href="#"><img alt="flag" src="{{ url('/img/icon-img/sp.jpg') }}">Spanish</a></li>
+                                            <li><a href="#"><img alt="flag" src="/img/icon-img/bl.jpg">Bangla </a></li>
+                                            <li><a href="#"><img alt="flag" src="/img/icon-img/ar.jpg">Arabic</a></li>
+                                            <li><a href="#"><img alt="flag" src="/img/icon-img/in.jpg">Hindi </a></li>
+                                            <li><a href="#"><img alt="flag" src="/img/icon-img/sp.jpg">Spanish</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -62,7 +62,7 @@
                     <div class="row">
                         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-5">
                             <div class="logo pt-39">
-                                <a href="index.html"><img alt="" src="{{ url('/img/logo/logo.png') }}"></a>
+                                <a href="index.html"><img alt="" src="/img/logo/logo.png"></a>
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-7 d-none d-lg-block">
@@ -79,7 +79,7 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="mega-menu-position"><a href="shop-page.html">Food</a>
+                                        <li class="mega-menu-position"><a href="{{ route('pet-shop/shop-page') }}">Food</a>
                                             <ul class="mega-menu">
                                                 <li>
                                                     <ul>
@@ -113,7 +113,7 @@
                                                 </li>
                                                 <li>
                                                     <ul>
-                                                        <li><a href="shop-page.html"><img alt="" src="{{ url('/img/banner/menu-img-4.jpg') }}"></a></li>
+                                                        <li><a href="shop-page.html"><img alt="" src="/img/banner/menu-img-4.jpg"></a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -165,7 +165,7 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li><a href="about-us.html">ABOUT</a></li>
+                                        <li><a href="{{ route('pet-shop/about') }}">ABOUT</a></li>
                                         <li><a href="contact.html">contact us</a></li>
                                     </ul>
                                 </nav>
@@ -199,7 +199,7 @@
                                         <ul>
                                             <li class="single-shopping-cart">
                                                 <div class="shopping-cart-img">
-                                                    <a href="#"><img alt="" src="{{ url('/img/cart/cart-1.jpg') }}"></a>
+                                                    <a href="#"><img alt="" src="/img/cart/cart-1.jpg"></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
                                                     <h4><a href="#">Dog Calcium Food </a></h4>
@@ -212,7 +212,7 @@
                                             </li>
                                             <li class="single-shopping-cart">
                                                 <div class="shopping-cart-img">
-                                                    <a href="#"><img alt="" src="{{ url('/img/cart/cart-2.jpg') }}"></a>
+                                                    <a href="#"><img alt="" src="/img/cart/cart-2.jpg"></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
                                                     <h4><a href="#">Dog Calcium Food</a></h4>
@@ -349,7 +349,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-12 col-sm-5">
                                 <div class="slider-single-img slider-animated-1">
-                                    <img class="animated" src="{{ url('/img/slider/slider-single-img.png') }}" alt="">
+                                    <img class="animated" src="/img/slider/slider-single-img.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -369,7 +369,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-5 col-12">
                                 <div class="slider-single-img slider-animated-1">
-                                    <img class="animated" src="{{ url('/img/slider/slider-single-img-2.png') }}" alt="">
+                                    <img class="animated" src="/img/slider/slider-single-img-2.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -383,7 +383,7 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="single-food-category cate-padding-1 text-center mb-30">
                             <div class="single-food-hover-2">
-                                <img src="{{ url('/img/product/product-1.jpg') }}" alt="">
+                                <img src="/img/product/product-1.jpg" alt="">
                             </div>
                             <div class="single-food-content">
                                 <h3>Dogs Food</h3>
@@ -393,7 +393,7 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="single-food-category cate-padding-2 text-center mb-30">
                             <div class="single-food-hover-2">
-                                <img src="{{ url('/img/product/product-2.jpg') }}" alt="">
+                                <img src="/img/product/product-2.jpg" alt="">
                             </div>
                             <div class="single-food-content">
                                 <h3>Cats Food</h3>
@@ -403,7 +403,7 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="single-food-category cate-padding-3 text-center mb-30">
                             <div class="single-food-hover-2">
-                                <img src="{{ url('/img/product/product-3.jpg') }}" alt="">
+                                <img src="/img/product/product-3.jpg" alt="">
                             </div>
                             <div class="single-food-content">
                                 <h3>Fishs Food</h3>
@@ -424,7 +424,7 @@
                         <div class="product-wrapper mb-10">
                             <div class="product-img">
                                 <a href="product-details.html">
-                                    <img src="{{ url('/img/product/product-4.jpg') }}" alt="">
+                                    <img src="/img/product/product-4.jpg" alt="">
                                 </a>
                                 <div class="product-action">
                                     <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
@@ -453,7 +453,7 @@
                         <div class="product-wrapper mb-10">
                             <div class="product-img">
                                 <a href="product-details.html">
-                                    <img src="{{ url('/img/product/product-5.jpg') }}" alt="">
+                                    <img src="/img/product/product-5.jpg" alt="">
                                 </a>
                                 <div class="product-action">
                                     <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
@@ -481,7 +481,7 @@
                         <div class="product-wrapper mb-10">
                             <div class="product-img">
                                 <a href="product-details.html">
-                                    <img src="{{ url('/img/product/product-6.jpg') }}" alt="">
+                                    <img src="/img/product/product-6.jpg" alt="">
                                 </a>
                                 <div class="product-action">
                                     <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
@@ -510,7 +510,7 @@
                         <div class="product-wrapper mb-10">
                             <div class="product-img">
                                 <a href="product-details.html">
-                                    <img src="{{ url('/img/product/product-7.jpg') }}" alt="">
+                                    <img src="/img/product/product-7.jpg" alt="">
                                 </a>
                                 <div class="product-action">
                                     <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
@@ -538,7 +538,7 @@
                         <div class="product-wrapper mb-10">
                             <div class="product-img">
                                 <a href="product-details.html">
-                                    <img src="{{ url('/img/product/product-8.jpg') }}" alt="">
+                                    <img src="/img/product/product-8.jpg" alt="">
                                 </a>
                                 <div class="product-action">
                                     <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
@@ -567,7 +567,7 @@
                         <div class="product-wrapper mb-10">
                             <div class="product-img">
                                 <a href="product-details.html">
-                                    <img src="{{ url('/img/product/product-9.jpg') }}" alt="">
+                                    <img src="/img/product/product-9.jpg" alt="">
                                 </a>
                                 <div class="product-action">
                                     <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
@@ -595,7 +595,7 @@
                         <div class="product-wrapper mb-10">
                             <div class="product-img">
                                 <a href="product-details.html">
-                                    <img src="{{ url('/img/product/product-10.jpg') }}" alt="">
+                                    <img src="/img/product/product-10.jpg" alt="">
                                 </a>
                                 <div class="product-action">
                                     <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
@@ -624,7 +624,7 @@
                         <div class="product-wrapper mb-10">
                             <div class="product-img">
                                 <a href="product-details.html">
-                                    <img src="{{ url('/img/product/product-11.jpg') }}" alt="">
+                                    <img src="/img/product/product-11.jpg" alt="">
                                 </a>
                                 <div class="product-action">
                                     <a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
@@ -660,7 +660,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="deal-img wow fadeInLeft">
-                            <a href="#"><img src="{{ url('/img/banner/banner-2.png') }}" alt=""></a>
+                            <a href="#"><img src="/img/banner/banner-2.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -682,7 +682,7 @@
                 </div>
             </div>
         </div>
-		<div class="testimonial-area pt-90 pb-70 bg-img" style="background-image:url({{ url('/img/banner/banner-1.jpg') }});">
+		<div class="testimonial-area pt-90 pb-70 bg-img" style="background-image:url(/img/banner/banner-1.jpg);">
 		    <div class="container">
                 <div class="row">
                     <div class="col-lg-10 ml-auto mr-auto">
@@ -703,28 +703,28 @@
                             </div>
                             <div class="testimonial-image-slider text-center">
                                 <div class="sin-testiImage">
-                                    <img src="{{ url('/img/testi/3.jpg') }}" alt="">
+                                    <img src="/img/testi/3.jpg" alt="">
                                     <h3>Robiul Islam</h3>
                                     <h5>Customer</h5>
                                 </div>
                                 <div class="sin-testiImage">
-                                    <img src="{{ url('/img/testi/4.jpg') }}" alt="">
+                                    <img src="/img/testi/4.jpg" alt="">
                                     <h3>Robiul Islam</h3>
                                     <h5>Customer</h5>
                                 </div>
                                 <div class="sin-testiImage">
-                                    <img src="{{ url('/img/testi/3.jpg') }}" alt="">
+                                    <img src="/img/testi/3.jpg" alt="">
                                     <h3>F. H. Shuvo</h3>
                                     <h5>Developer</h5>
                                 </div>
                                 <div class="sin-testiImage">
-                                    <img src="{{ url('/img/testi/5.jpg') }}" alt="">
+                                    <img src="/img/testi/5.jpg" alt="">
                                     <h3>T. T. Rayed</h3>
                                     <h5>CEO</h5>
                                 </div>
                             </div>
                             <div class="testimonial-shap">
-                                <img src="{{ url('/img/icon-img/testi-shap.png') }}" alt="">
+                                <img src="/img/icon-img/testi-shap.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -736,21 +736,21 @@
 		        <div class="row">
 		            <div class="col-lg-4 col-md-4">
 		                <div class="service-content text-center mb-30 service-color-1">
-		                    <img src="{{ url('/img/icon-img/shipping.png') }}" alt="">
+		                    <img src="/img/icon-img/shipping.png" alt="">
 		                    <h4>FREE SHIPPING</h4>
 		                    <p>Free shipping on all order </p>
 		                </div>
 		            </div>
 		            <div class="col-lg-4 col-md-4">
 		                <div class="service-content text-center mb-30 service-color-2">
-		                    <img src="{{ url('/img/icon-img/support.png') }}" alt="">
+		                    <img src="/img/icon-img/support.png" alt="">
 		                    <h4>ONLINE SUPPORT</h4>
 		                    <p>Online support 24 hours a day</p>
 		                </div>
 		            </div>
 		            <div class="col-lg-4 col-md-4">
 		                <div class="service-content text-center mb-30 service-color-3">
-		                    <img src="{{ url('/img/icon-img/money.png') }}" alt="">
+		                    <img src="/img/icon-img/money.png" alt="">
 		                    <h4>MONEY RETURN</h4>
 		                    <p>Back guarantee under 5 days</p>
 		                </div>
@@ -768,7 +768,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="blog-wrapper mb-30 gray-bg">
                             <div class="blog-img hover-effect">
-                                <a href="blog-details.html"><img alt="" src="{{ url('/img/blog/blog-1.jpg') }}"></a>
+                                <a href="blog-details.html"><img alt="" src="/img/blog/blog-1.jpg"></a>
                             </div>
                             <div class="blog-content">
                                 <div class="blog-meta">
@@ -784,7 +784,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="blog-wrapper mb-30 gray-bg">
                             <div class="blog-img hover-effect">
-                                <a href="blog-details.html"><img alt="" src="{{ url('/img/blog/blog-2.jpg') }}"></a>
+                                <a href="blog-details.html"><img alt="" src="/img/blog/blog-2.jpg"></a>
                             </div>
                             <div class="blog-content">
                                 <div class="blog-meta">
@@ -800,7 +800,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="blog-wrapper mb-30 gray-bg">
                             <div class="blog-img hover-effect">
-                                <a href="blog-details.html"><img alt="" src="{{ url('/img/blog/blog-3.jpg') }}"></a>
+                                <a href="blog-details.html"><img alt="" src="/img/blog/blog-3.jpg"></a>
                             </div>
                             <div class="blog-content">
                                 <div class="blog-meta">
@@ -825,7 +825,7 @@
                                 <div class="footer-info-wrapper">
                                     <div class="footer-logo">
                                         <a href="#">
-                                            <img src="{{ url('/img/logo/logo-2.png') }}" alt="">
+                                            <img src="/img/logo/logo-2.png" alt="">
                                         </a>
                                     </div>
                                     <p>Lorem ipsum dolor sit amet, co adipisi elit, sed eiusmod tempor incididunt ut labore et dolore</p>
@@ -886,7 +886,7 @@
                                 </div>
                                 <div class="payment-img">
                                     <a href="index.html">
-                                        <img src="{{ url('/img/icon-img/payment.png') }}" alt="">
+                                        <img src="/img/icon-img/payment.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -918,25 +918,25 @@
                             <div class="quick-view-learg-img">
                                 <div class="quick-view-tab-content tab-content">
                                     <div class="tab-pane active show fade" id="modal1" role="tabpanel">
-                                        <img src="{{ url('/img/quick-view/l1.jpg') }}" alt="">
+                                        <img src="/img/quick-view/l1.jpg" alt="">
                                     </div>
                                     <div class="tab-pane fade" id="modal2" role="tabpanel">
-                                        <img src="{{ url('/img/quick-view/l2.jpg') }}" alt="">
+                                        <img src="/img/quick-view/l2.jpg" alt="">
                                     </div>
                                     <div class="tab-pane fade" id="modal3" role="tabpanel">
-                                        <img src="{{ url('/img/quick-view/l3.jpg') }}" alt="">
+                                        <img src="/img/quick-view/l3.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="quick-view-list nav" role="tablist">
                                 <a class="active" href="#modal1" data-toggle="tab">
-                                    <img src="{{ url('/img/quick-view/s1.jpg') }}" alt="">
+                                    <img src="/img/quick-view/s1.jpg" alt="">
                                 </a>
                                 <a href="#modal2" data-toggle="tab" role="tab">
-                                    <img src="{{ url('/img/quick-view/s2.jpg') }}" alt="">
+                                    <img src="/img/quick-view/s2.jpg" alt="">
                                 </a>
                                 <a href="#modal3" data-toggle="tab" role="tab">
-                                    <img src="{{ url('/img/quick-view/s3.jpg') }}" alt="">
+                                    <img src="/img/quick-view/s3.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -999,15 +999,15 @@
 
 
 		<!-- all js here -->
-        <script src="{{ url('/js/vendor/jquery-1.12.0.min.js') }}"></script>
-        <script src="{{ url('/js/popper.js') }}"></script>
-        <script src="{{ url('/js/bootstrap.min.js') }}"></script>
-        <script src="{{ url('/js/jquery.counterup.min.js') }}"></script>
-        <script src="{{ url('/js/waypoints.min.js') }}"></script>
-        <script src="{{ url('/js/elevetezoom.js') }}"></script>
-        <script src="{{ url('/js/ajax-mail.js') }}"></script>
-        <script src="{{ url('/js/owl.carousel.min.js') }}"></script>
-        <script src="{{ url('/js/plugins.js') }}"></script>
-        <script src="{{ url('/js/main.js') }}"></script>
+        <script src="/js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="/js/popper.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/jquery.counterup.min.js"></script>
+        <script src="/js/waypoints.min.js"></script>
+        <script src="/js/elevetezoom.js"></script>
+        <script src="/js/ajax-mail.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>
