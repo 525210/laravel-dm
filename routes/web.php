@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Voyager;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,11 @@ Route::get('/', function () {
     return view('pet-shop.index');
 });
 
-Route::get('pet-shop/shop-page', function () {
-    return view('pet-shop/shop-page');
-})->name('pet-shop/shop-page');
+//Route::get('pet-shop/shop-page', function () {
+//    return view('pet-shop/shop-page');
+//})->name('pet-shop/shop-page');
+
+Route::get('pet-shop/shop-page', [\App\Http\Controllers\ProductController::class, 'shopList'])->name('pet-shop/shop-page');
 
 Route::get('pet-shop/main', function () {
     return view('pet-shop/index');
@@ -32,3 +35,8 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
