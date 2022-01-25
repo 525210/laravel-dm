@@ -14,9 +14,13 @@ use TCG\Voyager\Voyager;
 |
 */
 
-Route::get('/', function () {
-    return view('pet-shop.index');
-});
+//Route::get('/', function () {
+//    return view('pet-shop.index');
+//});
+
+Route::get('/', [\App\Http\Controllers\ProductController::class, 'shopIndex'])->name('home');
+Route::get('pet-shop.about-us', [\App\Http\Controllers\ProductController::class, 'about'])->name('pet-shop/about-us');
+Route::get('pet-shop.contact', [\App\Http\Controllers\ProductController::class, 'contact'])->name('pet-shop/contact');
 
 //Route::get('pet-shop/shop-page', function () {
 //    return view('pet-shop/shop-page');
@@ -28,7 +32,7 @@ Route::get('pet-shop/main', function () {
     return view('pet-shop/index');
 })->name('pet-shop/main');
 
-Route::get('pet-shop/about', [\App\Http\Controllers\PetController::class, 'about'])->name('pet-shop/about');
+//Route::get('pet-shop/about', [\App\Http\Controllers\PetController::class, 'about'])->name('pet-shop/about');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
