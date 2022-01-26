@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class ProductController extends Controller
 {
@@ -21,8 +22,16 @@ class ProductController extends Controller
     {
         $randProducts = Product::query()->inRandomOrder()->limit(4)->get();
         $product = Product::query()->select()->where(['id' => 2])->get();
-//        dd($product);
-        return view('pet-shop/index', ['randProducts' => $randProducts, 'product' => $product]);
+        $sessionId = Session::getId();
+        \Cart::session($sessionId);
+        $cart = \Cart::getContent();
+        $sum = \Cart::getTotal('price');
+        return view('pet-shop/index', [
+            'randProducts' => $randProducts,
+            'product' => $product,
+            'cart' => $cart,
+            'sum' => $sum
+        ]);
     }
 
     public function about()
@@ -33,5 +42,24 @@ class ProductController extends Controller
     public function contact()
     {
         return view('pet-shop.contact');
+    }
+
+    public function addCart(Request $request)
+    {
+        $product = Product::query()->where(['id' => $request->id])->first();
+        $sessionId = Session::getId();
+        \Cart::session($sessionId)->add([
+            'id' => $product->id,
+            'name' => $product->name,
+            'price' => $product->price,
+            'quantity' => $request->qty ?? 1,
+            'attributes' => [
+              'image' => $product->image,
+            ],
+        ]);
+
+        $cart = \Cart::getContent();
+
+        return redirect()->back();
     }
 }

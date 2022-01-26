@@ -19,18 +19,19 @@ use TCG\Voyager\Voyager;
 //});
 
 Route::get('/', [\App\Http\Controllers\ProductController::class, 'shopIndex'])->name('home');
-Route::get('pet-shop.about-us', [\App\Http\Controllers\ProductController::class, 'about'])->name('pet-shop/about-us');
-Route::get('pet-shop.contact', [\App\Http\Controllers\ProductController::class, 'contact'])->name('pet-shop/contact');
+Route::get('shop', [\App\Http\Controllers\ProductController::class, 'shopList'])->name('pet-shop/shop-page');
+Route::get('about', [\App\Http\Controllers\ProductController::class, 'about'])->name('pet-shop/about-us');
+Route::get('contact', [\App\Http\Controllers\ProductController::class, 'contact'])->name('pet-shop/contact');
+Route::get('add-cart', [\App\Http\Controllers\ProductController::class, 'addCart'])->name('pet-shop/add-cart');
 
 //Route::get('pet-shop/shop-page', function () {
 //    return view('pet-shop/shop-page');
 //})->name('pet-shop/shop-page');
 
-Route::get('pet-shop/shop-page', [\App\Http\Controllers\ProductController::class, 'shopList'])->name('pet-shop/shop-page');
 
-Route::get('pet-shop/main', function () {
-    return view('pet-shop/index');
-})->name('pet-shop/main');
+//Route::get('pet-shop/main', function () {
+//    return view('pet-shop/index');
+//})->name('pet-shop/main');
 
 //Route::get('pet-shop/about', [\App\Http\Controllers\PetController::class, 'about'])->name('pet-shop/about');
 
