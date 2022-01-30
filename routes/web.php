@@ -23,6 +23,15 @@ Route::get('shop', [\App\Http\Controllers\ProductController::class, 'shopList'])
 Route::get('about', [\App\Http\Controllers\ProductController::class, 'about'])->name('pet-shop/about-us');
 Route::get('contact', [\App\Http\Controllers\ProductController::class, 'contact'])->name('pet-shop/contact');
 Route::get('add-cart', [\App\Http\Controllers\ProductController::class, 'addCart'])->name('pet-shop/add-cart');
+Route::get('product-details', [\App\Http\Controllers\ProductController::class, 'productDetails'])->name('pet-shop/product-details');
+Route::get('checkout', [\App\Http\Controllers\ProductController::class, 'checkOut'])->name('pet-shop/checkout')->middleware('auth');
+Route::get('my-account', [\App\Http\Controllers\ProductController::class, 'myAccount'])->name('pet-shop/my-account')->middleware('auth');
+Route::post('make-order', [\App\Http\Controllers\ProductController::class, 'makeOrder'])->name('pet-shop/make-order')->middleware('auth');
+
+
+
+
+Route::get('stas', [\App\Http\Controllers\StasController::class, 'stas'])->name('stas');
 
 //Route::get('pet-shop/shop-page', function () {
 //    return view('pet-shop/shop-page');

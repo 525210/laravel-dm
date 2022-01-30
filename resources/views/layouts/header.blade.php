@@ -69,7 +69,7 @@
                             </div>
                         </div>
                         <div class="header-login same-style">
-                            <a href="login-register.html"><i class="icon-user icons"></i></a>
+                            <a href="{{ route('pet-shop/my-account') }}"><i class="icon-user icons"></i></a>
                         </div>
                         <div class="header-cart same-style">
                             <button class="icon-cart">
@@ -100,7 +100,7 @@
                                 </div>
                                 <div class="shopping-cart-btn">
                                     <a href="cart.html">view cart</a>
-                                    <a href="checkout.html">checkout</a>
+                                    <a href="{{ route('pet-shop/checkout') }}">checkout</a>
                                 </div>
                             </div>
                         </div>
