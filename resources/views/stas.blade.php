@@ -16,6 +16,9 @@
 
         <ul class="navbar-nav">
             <li class="nav-item">
+                <a class="nav-link" href="{{ route('stas', ['nomer' => '50']) }}">TestLink-50</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="{{ route('stas', ['nomer' => '150']) }}">TestLink-150</a>
             </li>
             <li class="nav-item">
@@ -27,7 +30,22 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('stas', ['nomer' => '450']) }}">TestLink-450</a>
             </li>
-        </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('stas', ['nomer' => '550']) }}">TestLink-550</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('stas', ['nomer' => '650']) }}">TestLink-650</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('stas', ['nomer' => '750']) }}">TestLink-750</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('stas', ['nomer' => '850']) }}">TestLink-850</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('stas', ['nomer' => '950']) }}">TestLink-950</a>
+            </li>
+            </ul>
     </nav>
 </div>
 <div class="container">
