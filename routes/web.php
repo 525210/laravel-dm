@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Voyager;
+use \App\Http\Controllers\Api\DeskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,9 @@ use TCG\Voyager\Voyager;
 //Route::get('/', function () {
 //    return view('pet-shop.index');
 //});
+//Api
+Route::get('/desks', [DeskController::class, 'index']);
+Route::get('/desks/{id}', [DeskController::class, 'show']);
 
 Route::get('/', [\App\Http\Controllers\ProductController::class, 'shopIndex'])->name('home');
 Route::get('shop', [\App\Http\Controllers\ProductController::class, 'shopList'])->name('pet-shop/shop-page');
