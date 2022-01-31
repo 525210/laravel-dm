@@ -19,8 +19,15 @@ use \App\Http\Controllers\Api\DeskController;
 //    return view('pet-shop.index');
 //});
 //Api
+Route::middleware('auth:api')->get('/user', function (Request $request){return $request->user();});
+/*
 Route::get('/desks', [DeskController::class, 'index']);
 Route::get('/desks/{id}', [DeskController::class, 'show']);
+*/
+
+Route::apiResources([
+    'desks' => DeskController::class
+]);
 
 Route::get('/', [\App\Http\Controllers\ProductController::class, 'shopIndex'])->name('home');
 Route::get('shop', [\App\Http\Controllers\ProductController::class, 'shopList'])->name('pet-shop/shop-page');
